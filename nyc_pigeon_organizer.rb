@@ -7,14 +7,14 @@ def nyc_pigeon_organizer(cart)
       arr.each do |person_name|
         if cart[color_gender_lives][colors_item].include?(person_name)
          final_hash["#{person_name}"]={
-           "#{color_gender_lives}": []
+           "#{color_gender_lives}": [] << "#{colors_item}"
          }
-         final_hash[person_name][color_gender_lives] << "#{colors_item}"
+         #final_hash[person_name][color_gender_lives] << "#{colors_item}"
         elsif !cart[color_gender_lives][colors_item].include?(person_name)
           final_hash["#{person_name}"]={
             "#{color_gender_lives}": ["#{colors_item}"]
           }
-        #  binding.pry
+          binding.pry
         end
       end
     end
