@@ -1,6 +1,6 @@
 require "pry"
 
-def pigeon_data(cart)
+def nyc_pigeon_organizer(cart)
   final_hash={}
   cart.each do |color_gender_lives, values1|
     values1.each do |colors_items, arr|
