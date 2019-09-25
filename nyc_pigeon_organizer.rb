@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(cart)
           if final_hash[name][color_gender_lives]
             final_hash[name][color_gender_lives] << colors_items.to_s
           else
-            final_hash[name][color_gender_lives] = colors_items.to_s
+            final_hash[name][color_gender_lives] = colors_items
           end
         else
           final_hash[name]={
