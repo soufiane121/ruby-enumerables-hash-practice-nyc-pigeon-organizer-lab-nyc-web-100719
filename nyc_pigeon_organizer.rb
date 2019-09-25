@@ -7,13 +7,13 @@ def pigeon_data(cart)
       arr.each do |name|
          if final_hash[name]
           if final_hash[name][color_gender_lives]
-            final_hash[name][color_gender_lives] << colors_items
+            final_hash[name][color_gender_lives] << colors_items.to_s
           else
             final_hash[name][color_gender_lives] = colors_items
           end
         else
           final_hash[name]={
-            color_gender_lives => [colors_items]
+            color_gender_lives => [colors_items.to_s]
           }
          end
       end
